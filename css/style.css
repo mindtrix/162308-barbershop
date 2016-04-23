@@ -1,0 +1,23 @@
+body{
+font-size:14px;
+line-height:24px;
+color:rgb(0, 0 ,0);
+font-weight:bold;
+font-family:ptsansnarrowbold;
+}
+b{
+font-size:30px;
+font-weight:bold;
+color:rgb(247,244,241);
+font-weight:bold;
+font-family:ptsansnarrowbold;
+}
+.features p{
+font-size:14px;
+line-height:24px;
+color:rgb(247,244,241);
+font-weight:bold;
+font-family:ptsansnarrowbold;
+}
+
+
