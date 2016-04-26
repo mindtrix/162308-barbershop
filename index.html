@@ -7,50 +7,50 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <nav class="main-navigation">
           <ul>
             <li>
-              <a href="#">Информация</a>
+              <a class="main-navigation-info" href="#" >Информация</a>
             </li>
             <li>
-              <a href="#">Новости</a>
+              <a class="main-navigation-news" href=# >Новости</a>
             </li>
             <li>
-              <a href="#">Прайс-лист</a>
+              <a class="main-navigation-price" href="#" >Прайс-лист</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a  class="main-navigation-shop" href="#">Магазин</a><!--Тут тоже Checked-->
             </li>
             <li>
-              <a href="#">Контакты</a>
+               <a class="main-navigation-contacts" href="#" >Контакты</a>
             </li>
           </ul>
         </nav>
         <div class="user-block">
           <a class="login" href="#">Вход</a>
         </div>
-      </div>
-    </header>
+     </div>
+</header>
     <main class="container">
       <div class="index-logo">
         <img src="img/borodinski-logo.png" width="368" height="204" alt="Барбершоп «Бородинский»">
       </div>
-      <section class="features">
+      <section class="features clearfix">
         <div class="features-item">
-          <b class="features-name">Быстро</b>
+          <h1 class="features-name">Быстро</h1>
           <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
         </div>
         <div class="features-item">
-          <b class="features-name">Круто</b>
+          <h1 class="features-name">Круто</h1>
           <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
         </div>
         <div class="features-item">
-          <b class="features-name">Дорого</b>
+          <h1 class="features-name">Дорого</h1>
           <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
         </div>
       </section>
-      <div class="index-content">
+      <div class="index-content clearfix">
         <div class="index-content-left">
           <h2 class="index-content-title">Новости</h2>
           <ul class="news-preview">
@@ -65,12 +65,15 @@
           </ul>
           <a class="btn" href="#">Все новости</a>
         </div>
+        <div class="vert-line">
+          <img src="img/" alt="">
+        </div>
         <div class="index-content-right">
           <h2 class="index-content-title">Фотогалерея</h2>
           <div class="gallery">
-            <div class="gallery-content"><!--figure буду использовать только там, где под текстом есть описание-->
+            <div class="gallery-content">
               <img src="img/workplace.jpg" width="286" height="164" alt="">
-            </div><!--figure буду использовать только там, где под текстом есть описание-->
+            </div>
             <button class="btn gallery-prev">Назад</button>
             <button class="btn gallery-next">Вперёд</button>
           </div>
@@ -106,7 +109,7 @@
       </div>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-contacts">
           <p>Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
@@ -125,5 +128,6 @@
         </section>
       </div>
     </footer>
+    <div>
   </body>
 </html>

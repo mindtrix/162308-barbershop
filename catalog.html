@@ -9,7 +9,9 @@
   <header class="main-header">
     <div class="container">
       <div class="header-logo">
-        <img src="img/slogo.png" alt="Барбершоп «Бородинский»" width="" height=""><!-- Не понял где начало и конец картинки-->
+          <a class="logo-link" href="index.html">
+        <img src="img/slogo.png" alt="Барбершоп «Бородинский»" width="" height="">
+        </a>
       </div>
       <nav class="main-navigation">
         <ul>
@@ -51,31 +53,53 @@
       </ul>
     </div>
     <div class="filter-box">
-      <form action="#" method="post">  <!--Не понял, нужно-ли оборачивать форму,например в "<div class="filter"></div>"?-->
-      <fieldset>
+      <form action="#" method="post">
+      <fieldset class="brands">
       <legend>Производители:</legend>
+      <ul>
+      <li>
         <input type="checkbox" name="baxter-of-california" id="baxter-of-california" checked>
-        <label for="baxter-of-california">Baxter of california</label><br>
+        <label for="baxter-of-california">Baxter of california</label>
+      </li>
         <input type="checkbox" name="mr-natty" id="mr-natty">
-        <label for="mr-natty">Mr natty</label><br>
+        <label for="mr-natty">Mr natty</label>
+      <li>
         <input type="checkbox" name="suavecito" id="suavecito" checked>
-        <label for="suavecito">Suavecito</label><br>
+        <label for="suavecito">Suavecito</label>
+      </li>
+      <li>
         <input type="checkbox" name="malin-goetz" id="malin-goetz">
-        <label for="malin-goetz">Malin goetz</label><br>
+        <label for="malin-goetz">Malin goetz</label>
+      </li>
+      <li>
         <input type="checkbox" name="murray's" id="murray's">
-        <label for="murray's">Murray's</label><br>
+        <label for="murray's">Murray's</label>
+      </li>
+      <li>
         <input type="checkbox" name="american-crew" id="american-crew" checked>
         <label for="american-crew">American crew</label>
+      </li>
+    </ul>
       </fieldset>
-      <fieldset>
+      <fieldset class="items-group">
       <legend>Группы товаров</legend>
+      <ul>
+      <li>
         <input type="radio" name="razor-supplies" id="razor-supplies">
-        <label for="razor-supplies">Бритвенные принадлежности</label><br>
+        <label for="razor-supplies">Бритвенные принадлежности</label>
+      </li>
+      <li>
         <input type="radio" name="haircare-stuff" id="haircare-stuff" checked >
-        <label for="haircare-stuff" >Средства для ухода</label><br>
+        <label for="haircare-stuff" >Средства для ухода</label>
+      </li>
+      <li>
         <input type="radio" name="accesorise" id="accesorise">
-        <label for="accesorise">Аксесуары</label><br>
-        <a class="btn-show" href="#">показать</a>
+        <label for="accesorise">Аксесуары</label>
+      </li>
+      <li>
+        <button class="btn-show" type="submit" href="#" >показать</button>
+      </li>
+      </ul>
       </fieldset>
     </form>
   </div>
@@ -83,50 +107,74 @@
         <article class="product-item ">
           <figure class="item-photo">
             <img src="img/baxter-kit-card.jpg" alt="product-photo" width="220px" height="165px">
-            <p class="product-info">Набор для путешествий &#060&#060Baxter of california&#062&#062</p>
+            <a class="link-card" href="#">
+            <p class="product-info">Набор для путешествий<br>&#060&#060Baxter of california&#062&#062</p>
+            </a>
           </figure>
-          <div class="price">2900</div>
+          <div class="price">
+            <span class="price">2900</span>
           <a class="btn-buy" href="#">Купить</a>
+        </div>
         </article>
       <article class="product-item">
         <figure class="item-photo">
           <img src="img/baxter-gel.jpg" alt="product-photo" width="220px" height="165px">
-          <p class="product-info">Увлажняющий кондиционер &#060&#060Baxter of california&#062&#062</p>
+          <a class="link-card" href="#">
+          <p class="product-info">Увлажняющий кондиционер<br>&#060&#060Baxter of california&#062&#062</p>
+          </a>
         </figure>
-        <div class="price">750</div>
+        <div class="price">
+        <span class="price">750</span>
         <a class="btn-buy" href="#">Купить</a>
+        </div>
       </article>
       <article class="product-item">
         <figure class="item-photo">
           <img src="img/Suavecito-gel.jpg" alt="product-photo" width="220px" height="165px">
-          <p class="product-info">Гель для волос &#060&#060Suavecito&#062&#062</p>
+          <a class="link-card" href="#">
+          <p class="product-info">Гель для волос<br>&#060&#060Suavecito&#062&#062</p>
+          </a>
         </figure>
-        <div class="price">290</div>
+        <div class="buy-block">
+          <span class="price">290</span>
         <a class="btn-buy" href="#">Купить</a>
+        </div>
       </article>
       <article class="product-item">
         <figure class="item-photo">
           <img src="img/american-crew-hair.jpg" alt="product-photo" width="220px" height="165px">
-          <p class="product-info">Глиина для укладки волос &#060&#060American crew&#062&#062</p>
+          <a class="link-card" href="#">
+          <p class="product-info">Глиина для укладки волос<br>&#060&#060American crew&#062&#062</p>
+          </a>
         </figure>
-        <div class="price">500</div>
-        <a class="btn-buy" href="#">Купить</a>
+        <div class="buy-block">
+          <span class="price">500</span>
+          <a class="btn-buy" href="#">Купить</a>
+        </div>
       </article>
       <article class="product-item">
         <figure class="item-photo">
           <img src="img/american-crew-gel.jpg" alt="product-photo" width="220px" height="165px">
-          <p class="product-info">Гель для волос &#060&#060American crew&#062&#062</p>
+          <a class="link-card" href="#">
+          <p class="product-info">Гель для волос<br>&#060&#060American crew&#062&#062</p>
+          </a>
         </figure>
-        <div class="price">300</div>
-        <a class="btn-buy" href="#">Купить</a>
+        <div class="price">
+          <span class="price">300</span>
+          <a class="btn-buy" href="#">Купить</a>
+        </div>
       </article>
       <article class="product-item">
         <figure class="item-photo">
           <img src="img/baxter-shave-kit.jpg" alt="product-photo" width="220px" height="165px">
-          <p class="product-info">Набор для бритья &#060&#060Baxter of california&#062&#062</p>
+          <a class="link-card" href="#">
+          <p class="product-info">Набор для бритья<br>&#060&#060Baxter of california&#062&#062</p>
+          </a>
         </figure>
-        <div class="price">3900</div>
-        <a class="btn-buy" href="#">Купить</a>
+        <div class="price">
+          <span class="price">3900</span>
+          <a class="btn-buy" href="#">Купить</a>
+        </div>
       </article>
     </div>
     <div class="page-nav">
