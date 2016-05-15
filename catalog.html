@@ -10,12 +10,10 @@
 <body class="inner">
   <header class="main-header">
     <div class="container clearfix">
-      <div class="header-logo">
-          <a class="logo-link" href="index.html">
-        <img src="img/slogo.png" alt="Барбершоп «Бородинский»" width="" height="">
-        </a>
-      </div>
       <nav class="main-navigation">
+        <a class="header-logo" href="index.html">
+          <img src="img/slogo.png" alt="Барбершоп «Бородинский»" width="111" height="24">
+          </a>
         <ul>
           <li>
             <a class="main-navigation-info" href="#" >Информация</a>
@@ -24,10 +22,10 @@
             <a class="main-navigation-news" href=# >Новости</a>
           </li>
           <li>
-            <a class="main-navigation-price" href="#" >Прайс-лист</a>
+            <a href="price.html" class="main-navigation-price" href="#" >Прайс-лист</a>
           </li>
-          <li>
-            <a  class="main-navigation-shop" href="#">Магазин</a><!--Тут тоже Checked-->
+          <li class="active">
+            <a  class="main-navigation-shop">Магазин</a><!--Тут тоже Checked-->
           </li>
           <li>
              <a class="main-navigation-contacts" href="#" >Контакты</a>
@@ -49,9 +47,8 @@
         <li>
           <a href="#" class="breadcrumbs-shop">Магазин</a>
         </li>
-        <li>
-          <a href="catalog.html" class="breadcrumbs-supplies-end">Средства для ухода</a><!--Сделать "checked"-->
-        </li>
+        <li class="current">
+          <span class="breadcrumbs-supplies-end ">Средства для ухода</span>
       </ul>
     </div>
     <div class="filter-box clearfix">
@@ -188,7 +185,7 @@
     </div>
   </div>
   </main>
-  <footer class="main-footer inner">
+  <footer class="main-footer">
     <div class="container clearfix">
       <section class="footer-contacts">
         <p>Барбершоп «Бородинский»<br>

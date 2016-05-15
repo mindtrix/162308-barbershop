@@ -2,9 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
     <title>Барбершоп «Бородинский»</title>
   </head>
   <body>
@@ -19,7 +19,7 @@
               <a class="main-navigation-news" href=# >Новости</a>
             </li>
             <li>
-              <a class="main-navigation-price" href="#" >Прайс-лист</a>
+              <a href="price.html" class="main-navigation-price" href="#" >Прайс-лист</a>
             </li>
             <li>
               <a  class="main-navigation-shop" href="#">Магазин</a><!--Тут тоже Checked-->
@@ -128,6 +128,24 @@
         </section>
       </div>
     </footer>
-    <div>
+    <div class="modal-content">
+         <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+         <h2 class="modal-content-title">Личный кабинет</h2>
+         <p>Введите свой логин и пароль.</p>
+         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+           <input class="icon icon-user" type="text" name="login" placeholder="Логин">
+           <input class="icon icon-password" type="password"  name="password" placeholder="Пароль">
+           <label class="login-checkbox">
+             <input type="checkbox" name="remember">
+             <span class="checkbox-indicator"></span>
+             Запомните меня
+           </label>
+           <a class="restore" href="#">Я забыл пароль!</a>
+           <button class="btn" type="submit">Войти</button>
+         </form>
+       </div>
+       <div class="modal-content-map">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <div id="yandex-map"></div>
   </body>
 </html>
